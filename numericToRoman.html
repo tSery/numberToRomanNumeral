@@ -1,30 +1,20 @@
 <!DOCTYPE html>
 
 <head>
+	<link rel="stylesheet" type="text/css" href="numericToRoman.css">
 	<script src='numericToRoman.js'></script>
 	<title>Roman Numerals Converter</title>
-	<style>
-		body {
-			text-align:center;
-			font-family:helvetica;
-			margin: 0 auto;
-		}
-		input {
-			font-size:18px;
-			padding: 10px;
-			margin: 200px 10px 10px 10px;
-		}
-		input[readonly="true"] {
-			margin: 20px auto;
-		}
-	</style>
 </head>
-<body>
-<input id="number" type="text" placeholder="Your number here" mozactionhint="go" onKeyDown="enterListener(event);"></input>
-<input id="goRomanButton" type="button" value="GO!" onclick="getRomanNumeric()"></input>
-</br>
-<input readonly="true" id="answer"></input>
-<script>
-</script>
+<body onload="setPage()">
+	<div id="backgroundRomanNumerals"></div>
+	<h1>Roman Numerals Converter</h1>
+	<!-- <div id="userInputBackground"></div> -->
+	<div id="userInput">
+		<input id="number" type="text" placeholder="Your number here" mozactionhint="go" onKeyDown="enterListener(event);"></input>
+		<input id="goRomanButton" type="button" value="GO!" onclick="getRomanNumeric()"></input>
+		</br>
+		<p id="directions">enter a number in the range of 1 - </p>
+		<input placeholder="Example: XII" readonly="true" id="answer"></input>
+	</div>
 </body>
 

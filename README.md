@@ -1,4 +1,4 @@
 numberToRomanNumeral
 ====================
 
-Simple page that converts a number to a roman numeral
+Simple page that converts a number to roman numerals
